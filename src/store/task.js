@@ -14,7 +14,7 @@ export const tasksSlice = createSlice({
       // immutable state based off those changes
       state.data = action.payload;
     },
-    setToUpdate:(state) => {
+    setToUpdate:state => {
         state.toUpdate = Math.random()
     }
   }

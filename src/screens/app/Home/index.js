@@ -20,7 +20,7 @@ const Home = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     firestore()
-    .collection('Users')
+    .collection('Tasks')
     .where("userId", "==", user?.uid)
     .get()
     .then(querySnapshot => {
@@ -68,7 +68,7 @@ useEffect(() => {
         </View>
         <TouchableOpacity style={styles.box} onPress={()=> navigation.navigate("Tasks")}>
           <Text style={styles.title}>Check all my task.</Text>
-          <Text style={styles.subtitle}>See all tasks and filter them by categories you have selected when creating them.</Text>
+           <Text style={styles.subtitle}>See all tasks and filter them by categories you have selected when creating them.</Text>
         </TouchableOpacity>
       </ScrollView>
 

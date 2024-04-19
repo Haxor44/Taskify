@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     subtitle:{
         fontSize:15,
         color:colors.grey,
-        textalign:"center",
+        textAlign:"center",
         marginVertical:16
     },
     footer: {

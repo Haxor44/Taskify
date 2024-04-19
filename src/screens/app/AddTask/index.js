@@ -19,6 +19,7 @@ import Title from '../../../components/Title';
 import {categories} from '../../../constants/categories';
 import styles from './styles';
 import { useDispatch, useSelector } from 'react-redux';
+import { setToUpdate } from '../../../store/task';
 
 const AddTask = ({navigation}) => {
   const user = useSelector(state => state.user.data);
